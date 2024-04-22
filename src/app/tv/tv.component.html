@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+            <ng-container *ngFor="let p of product">
+                <div class="col-md-4" *ngIf="p.productName=='Tv'">
+                    <div class="card" >
+                       <div class="card-header">
+                       <img [src]="p.productImage" alt=""  class="card-img-top img-fluid w-100">
+                       </div>
+                       <div class="card-body">
+                           <h4 class="card-title"></h4>
+                           <p class="card-text">Description:{{p.productDescription}}</p>
+                           <p class="card-text">Company:{{p.productCompany}}</p>
+                           <p class="card-text">Price:{{p.productPrice}}</p>
+                       </div>
+                       <div class="card-footer">
+                       <button class="btn btn-primary" (click)="addcart(p)">Add to cart</button>
+                       <button class="btn btn-warning">Buy Now</button>
+                       </div>
+                    </div>
+                   </div>
+        </ng-container>
+    </div>
+</div>
+

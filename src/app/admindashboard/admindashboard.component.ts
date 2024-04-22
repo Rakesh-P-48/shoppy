@@ -1,0 +1,29 @@
+import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-admindashboard',
+  templateUrl: './admindashboard.component.html',
+  styleUrl: './admindashboard.component.css'
+})
+export class AdmindashboardComponent {
+  img2="https://iconape.com/wp-content/png_logo_vector/avatar-4.png";
+
+user:any;
+  username:any;
+  constructor(private router:Router) {}
+    ngOnInit() {
+      if(localStorage.getItem('user')!=null){
+        this.user=JSON.parse(localStorage.getItem('user')||"{}")
+        this.username=this.user.username;
+      }
+      else{
+        this.router.navigateByUrl("/");
+      }
+    }
+  }
+
+
+
+
+

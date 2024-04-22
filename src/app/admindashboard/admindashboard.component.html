@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <nav class ="navbar navbar-expand-md navbar-dark bg-bhaskar flex-md-column flex-row align-items-start">
+                <a class="navbar-brand" href="#">Admindashboard
+                    <br>
+                    <img [src]="img2" alt="" width="180" height="180">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="sidebar">
+                    <ul class="flex-md-column flex-row navbar-nav w=100 justify-content-between">
+                        <li class="nav-item">
+                            <a class ="nav-link" routerLink="/admin/home">dashboard</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"> <a routerLink="/admin/mobiles">Mobiles </a></li>
+                                <li class="dropdown-item"> <a routerLink="/admin/Laptops">Laptops</a></li>
+                                <li class="dropdown-item"> <a routerLink="/admin/Tv">Tv</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-link" routerLink="/admin/add">Add products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-link" routerLink="/admin/View">view</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/admin/manage">Manage Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-link" routerLink="/">logout</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            </div>
+            <div class="col-md-9">
+         <router-outlet></router-outlet>
+         </div>
+     </div>
+     </div>

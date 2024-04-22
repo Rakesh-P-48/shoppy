@@ -1,0 +1,17 @@
+.navbar{ 
+    width: 250px;
+    padding:15px;
+    padding-bottom:500px;
+    position:absolute;
+    left:0px;
+}
+.bg-bhaskar{
+    background-color:darkslateblue;
+}
+.navbar-nav{
+    margin-top:50px;
+}
+.nav-item{
+      padding-top:10px;
+      margin-left:20px;
+}
